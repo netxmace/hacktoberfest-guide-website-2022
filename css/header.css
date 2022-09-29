@@ -1,0 +1,120 @@
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 4.5rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: #e5e1e6;
+  background-image: linear-gradient(to left bottom, #f5f5dc, #64e3ff, #9092ff); /*#ffe27d*/
+  
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  z-index: 100;
+}
+
+header .header-logo .current-page {
+  color: #170f1e;
+}
+
+header .header-logo a {
+  color: #170f1e;
+}
+
+header .fa {
+  padding: 0.5rem;
+}
+
+header .fa-bars {
+  display: none;
+}
+
+header .hide-close {
+  display: none;
+}
+
+header nav {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+}
+
+header nav ul li a {
+  color: inherit;
+  font-weight: 700;
+}
+
+header nav ul li:hover {
+  color: #9092ff;
+}
+
+header nav ul .current-page {
+  color:  #9092ff;
+}
+
+header nav ul .home-link {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  header .header-logo {
+    visibility: hidden;
+  }
+  header .fa-bars {
+    display: block;
+  }
+  header .hide-bars {
+    display: none;
+  }
+  header nav {
+    position: fixed;
+    top: 4.5rem;
+    left: -100%;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  header nav ul {
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #072540;
+    color: white;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header nav ul .home-link {
+    display: block;
+  }
+  header nav li {
+    padding: 2rem 0;
+  }
+  header .show {
+    left: 0;
+  }
+}
+/*# sourceMappingURL=header.css.map */

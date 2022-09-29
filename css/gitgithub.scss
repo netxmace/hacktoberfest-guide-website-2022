@@ -1,0 +1,99 @@
+$dark-blue: #072540;
+$light-blue: #93c2db;
+$light-pink: #fc88de;
+$dark-pink: #d06aa8;
+main {
+    width: 50%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    h1 {
+        text-align: center;
+        color: $light-pink;
+    }
+    .block {
+        margin: 3rem;
+        &__heading {
+            color: white;
+        }
+        &__paragraph {
+            padding: 1rem 0;
+            color: $light-blue;
+            text-align: start;
+        }
+        .link {
+            padding: 0.5rem 0;
+            display: block;
+            color: #9c4668;
+            &:hover {
+                color: $light-pink;
+            }
+        }
+        .inline-link {
+            color: #9c4668;
+            &:hover {
+                color: $light-pink;
+            }
+        }
+        pre {
+            padding: 1rem;
+            margin: 1rem 0;
+            //color is $light-blue
+            background-color: rgba(147, 197, 219, 0.07);
+            color: $light-blue;
+            // color: $dark-blue;
+            code {
+                width: 100%;
+            }
+        }
+        .inline-code {
+            padding: 0.3rem;
+            background-color: rgba(147, 197, 219, 0.07);
+        }
+        img {
+            width: 40vw;
+            height: auto;
+        }
+        ul {
+            padding: 1rem;
+            li {
+                color: $light-blue;
+                padding: 0.5rem 0;
+            }
+        }
+        .image {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+footer {
+    opacity: .6;
+    p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $light-blue;
+        letter-spacing: 1px;
+        padding-bottom: .7rem;
+    }
+    a {
+        color: $light-pink;
+    }
+}
+
+@media (max-width: 1024px) {
+    main {
+        width: 100%;
+        .block {
+            pre {
+                overflow-x: scroll;
+            }
+            .image {
+                overflow-x: scroll;
+            }
+        }
+    }
+}
