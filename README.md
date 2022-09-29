@@ -1,2 +1,7 @@
-# hacktoberfest-guide-website-2022
-A website to help with your  Hacktober endeavour on FOSS
+# macetoberfest
+Website for the hacktoberfest event organised by NetX
+
+
+## Todo
+- [x] overflow-x on the pre tags only on small screens
+- [ ] add footer

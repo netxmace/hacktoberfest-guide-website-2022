@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/gitgithub.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>NetX | Contribution Guide</title>
+</head>
+
+<body>
+    <header>
+        <i class="fa fa-bars"></i>
+        <i class="fa fa-close hide-close"></i>
+        <h1 class="header-logo"> <a href="/">NetX</a> </h1>
+        <nav id="navbar">
+            <ul>
+                <li class="home-link"><a href="index.html">Home</a></li>
+                <li><a href="gitguide.html">Learn Git[Hub]</a></li>
+                <li><a class="current-page" href="contributing.html">Contributing</a></li>
+                <!-- <li><a href="#">FOSS</a></li> -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contributing to Hacktoberfest</h1>
+        <div class="block">
+            <h3 class="block__heading">what's all that buzz around GitHub ?!</h3>
+            <p class="block__paragraph">
+                GitHub.com is the one-stop-hub where developers store, modify and contribute to open sourced projects. Thinking about getting started with contributing to projects on GitHub but don't really know how it works? We got you covered! Here's a general guide
+                on how to work with GitHub.
+            </p>
+        </div>
+        <div class="block">
+            <h3 class="block__heading">Step 1 : Sign into your GitHub account</h3>
+            <p class="block__paragraph">Sign into your GitHub account or <a href="https://github.com/join" target="_blank" rel="noopener" class="inline-link"> [ create a new account]</a> if you don't already have one</p>
+        </div>
+        <div class="block">
+            <h3 class="block__heading">Step 2 : Choose a project to work on</h3>
+            <p class="block__paragraph">You've probably heard of the word "repository" by now. Think of a repository ("repo") as a folder containing a set of files required for a project.<br> Search for repos ( bonus: search with the tag "hacktoberfest") - browse through the code
+                - check out the contribution guidelines often times present as a "README.MD" file and then choose a project. If you don’t have a feature or bugfix in mind you can check out the issues section of a project. This is where maintainers ask
+                for help in fixes and adding new features. Look for open issues, you can also filter them using labels.
+            </p>
+        </div>
+        <div class="block">
+            <h3 class="block__heading">Step 3: "Fork" and "Clone"</h3>
+            <p class="block__paragraph">You don't have the permissions to directly modify the code in someone else's repository so let's create our own copy of that repo in our GitHub account. For this press the <code class="inline-code">fork</code> button. <br> Now you need to
+                set up a working copy of the fork on your computer. For this we <code class="inline-code">clone</code> the forked repo. Find the “HTTPS clone URL”and use that to clone locally using a terminal:
+            </p>
+            <pre><code>~ git clone the-url.git</code></pre>
+            <p class="block__paragraph">cd into the project’s directory you just downloaded:</p>
+            <pre><code>cd folder-name</code></pre>
+            <p class="block__paragraph">suppose changes were made to the parent repo and you want to update your local copy to have those changes, you need to create a new remote called <code class="inline-code">upstream</code> <br>Why do this? This is so that any changes in the
+                parent repo can be updated to your repo. </p>
+            <p class="block__paragraph">Find the “HTTPS clone URL” of the parent repo and add the remote :</p>
+            <pre><code>git remote add upstream the-url.git</code></pre>
+            <p class="block__paragraph">Now you have two remotes: <br> 1. origin - pointing to the forked repo. <br> 2. upstream - pointing to the main repo. <br></p>
+            <p class="block__paragraph">To view all the remotes:</p>
+            <pre><code>~ git remote -v</code></pre>
+
+        </div>
+        <div class="block">
+            <h3 class="block__heading">step 5 : Write some code</h3>
+            <p class="block__paragraph">Kudos to you if you've made it this far. 🎉 You now have a working copy of the source code. Make sure to follow installation guidelines if any. Lets get to the fun bit now!! </p>
+            <ul>
+                <li>Add or modify the code locally using any code editors ( VS Code, Sublime,etc).</li>
+                <li>Once you've made the changes , use <code class="inline-code">git add .</code> to stage the changes and<code class="inline-code">git commit -m "commit message"</code> to commit them.</li>
+                <li>Before you push the changes, use<code class="inline-code">git pull upstream</code> to "pull" any changes from the "upstream" i.e. the main repository into your local repository.</li>
+                <li>You can finally upload the changes you've made locally into your fork using<code class="inline-code">git push origin</code> .</li>
+            </ul>
+            <p class="block__paragraph">
+                <a href="/gitguide.html" class="link">Check out our git guide to learn more about git local workflow</a>
+            </p>
+        </div>
+        <div class="block">
+            <h3 class="block__heading">Step 6 : Sending the "Pull Request" </h3>
+            <p class="block__paragraph">The changes you've made on your fork will not visible on the main project repository. For this we send a "pull request" to the main repo requesting the maintainer to pull your changes into their repo.</p>
+            <p class="block__paragraph">avigate to your fork on your GitHub account. Click on “Compare & pull request” button - Give an apt title and body describing your PR - Click on "Create pull request button" and voilà you've successfully send your first PR.</p>
+            <p class="block__paragraph">Take a break Grab a cuppa coffee while the maintainers review your work and hopefully "merge" it. In case they request changes repeat from step 5. </p>
+        </div>
+    </main>
+    <footer>
+        <p>Created by&nbsp;<a href="http://netx.club" target="_blank" rel="noopener">NetX</a></p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>

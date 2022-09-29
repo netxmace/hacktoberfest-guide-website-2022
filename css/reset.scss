@@ -1,0 +1,19 @@
+$dark-blue: #072540;
+$light-blue: #93c2db;
+$light-pink: #fc88de;
+$dark-pink: #d06aa8;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: $dark-blue;
+}
+
+a {
+    // color: inherit;
+    text-decoration: none;
+}
